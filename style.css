@@ -1,10 +1,7 @@
-Dưới đây là **toàn bộ file `style.css`** đã cập nhật với tông màu chủ đạo **xanh da trời** và **trắng**. Bạn chỉ cần ghi đè lên file cũ:
-
-```css
 /* style.css - Sky blue & white theme */
 body {
   font-family: Arial, sans-serif;
-  background-color: #E6F7FF;  /* rất nhạt của xanh da trời */
+  background-color: #E6F7FF;
   color: #333;
   margin: 0;
   padding: 0;
@@ -14,17 +11,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #87CEEB;  /* xanh da trời */
+  background-color: #87CEEB;
   padding: 15px 0;
 }
 
-.menu .logo {
-  height: 40px;
-  margin-right: 20px;
-}
-
 .menu a {
-  color: #fff;                /* chữ trắng trên nền xanh */
+  color: #fff;
   margin: 0 20px;
   text-decoration: none;
   font-weight: 600;
@@ -45,14 +37,14 @@ body {
 .container {
   max-width: 800px;
   margin: 20px auto;
-  background: #fff;            /* nền trắng */
+  background: #fff;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h1, h2, h3 {
-  color: #005F8A;              /* xanh đậm hơn cho tiêu đề */
+  color: #005F8A;
   margin-bottom: 20px;
 }
 
@@ -64,13 +56,13 @@ textarea {
   width: 100%;
   padding: 12px;
   margin: 8px 0 16px;
-  border: 1px solid #B3E0FF;   /* viền nhạt xanh */
+  border: 1px solid #B3E0FF;
   border-radius: 4px;
-  background: #F0FBFF;         /* nền rất nhạt */
+  background: #F0FBFF;
 }
 
 button {
-  background-color: #00AEEF;   /* xanh da trời tươi */
+  background-color: #00AEEF;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -80,7 +72,7 @@ button {
 }
 
 button:hover {
-  background-color: #008CAB;   /* xanh đậm khi hover */
+  background-color: #008CAB;
 }
 
 hr {
@@ -91,7 +83,7 @@ hr {
 
 /* Idea items */
 .idea-item {
-  background: #FFFFFF;
+  background: #fff;
   border: 1px solid #B3E0FF;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -118,19 +110,13 @@ hr {
   right: 20px;
 }
 
-.idea-actions button {
-  margin-left: 8px;
-  padding: 6px 10px;
-  font-size: 14px;
-}
-
 .idea-actions .edit {
-  background-color: #FFD966;   /* màu vàng nhẹ cho nút Sửa */
+  background-color: #FFD966;
   color: #333;
 }
 
 .idea-actions .delete {
-  background-color: #FF6B6B;   /* đỏ tươi cho nút Xóa */
+  background-color: #FF6B6B;
   color: #fff;
 }
 
@@ -164,4 +150,3 @@ hr {
 .topic ul li a {
   color: #005F8A;
 }
-```
