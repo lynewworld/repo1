@@ -167,17 +167,22 @@ hr {
   font-size: 16px;
 }
 
-/* Dropdown Google */
+/* Cố định dropdown ngôn ngữ ở cuối page, góc phải */
 #google_translate_element {
-  position: static; /* nằm cùng hàng */
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  /* Tông trắng & viền nhẹ cho dropdown */
 }
 
 #google_translate_element .goog-te-combo {
-  background-color: #ffffff;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 6px 12px;
-  font-size: 14px;
-  appearance: none;
+  background-color: #ffffff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  padding: 6px 12px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  appearance: none !important;
 }
+
