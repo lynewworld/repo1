@@ -1,4 +1,3 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -7,23 +6,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Menu + Language Selector -->
   <div class="menu">
-    <a href="home.html">🏠 Trang chủ</a>
-    <a href="about.html">Giới thiệu</a>
-    <a href="ideas.html">💡 Ý tưởng</a>
-    <a href="contact.html">✉️ Liên hệ</a>
+    <div class="menu-links">
+      <a href="home.html">🏠 Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="ideas.html">💡 Ý tưởng</a>
+      <a href="contact.html">✉️ Liên hệ</a>
+    </div>
+    <!-- Đây là placeholder cho Google Translate -->
+    <div id="google_translate_element"></div>
   </div>
+
   <!-- Google Translate script -->
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'vi',
-      includedLanguages: 'vi,en,fr,zh-CN,ja,ko,es,pt,my,th',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, 'google_translate_element');
-  }
-</script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'vi',
+        includedLanguages: 'vi,en,fr,zh-CN,ja,ko,es,pt,my,th',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   <div class="breadcrumb">
     Bạn đang ở: <a href="home.html">Home</a> › Giới thiệu
   </div>
