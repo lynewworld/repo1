@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Liên hệ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <a href="home.html">🏠 Trang chủ</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="ideas.html">💡 Ý tưởng</a>
+    <a href="contact.html">✉️ Liên hệ</a>
+  </div>
+  <div class="breadcrumb">Bạn đang ở: <a href="home.html">Home</a> › Liên hệ</div>
+  <hr/>
+  <div class="container">
+    <h2>Gửi ý kiến / Liên hệ</h2>
+    <form onsubmit="return sendFeedback(event)">
+      <input type="text" id="name" placeholder="Tên của bạn" required>
+      <input type="email" id="email" placeholder="Email của bạn" required>
+      <textarea id="message" placeholder="Nội dung góp ý" required></textarea>
+      <button type="submit">Gửi</button>
+      <p id="status"></p>
+    </form>
+  </div>
+  <script>
+    function sendFeedback(event) {
+      event.preventDefault();
+      document.getElementById("status").textContent = "Gửi thành công!";
+      document.getElementById("status").style.color = "green";
+      return false;
+    }
+  </script>
+</body>
+</html>

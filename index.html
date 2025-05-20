@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thế Giới Mới - Nhập Mật Khẩu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" style="max-width:400px;">
+    <h2>Chào mừng đến với Thế Giới Mới</h2>
+    <form onsubmit="return checkPassword(event)">
+      <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+      <button type="submit">Vào trang chính</button>
+      <p id="message"></p>
+    </form>
+  </div>
+  <script>
+    function checkPassword(event) {
+      event.preventDefault();
+      const pass = document.getElementById("password").value;
+      if (pass === "newworld") {
+        window.location.href = "home.html";
+      } else {
+        document.getElementById("message").textContent = "Mật khẩu không đúng!";
+        document.getElementById("message").style.color = "red";
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ý tưởng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <a href="home.html">🏠 Trang chủ</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="ideas.html">💡 Ý tưởng</a>
+    <a href="contact.html">✉️ Liên hệ</a>
+  </div>
+  <div class="breadcrumb">Bạn đang ở: <a href="home.html">Home</a> › Ý tưởng</div>
+  <hr/>
+  <div class="container">
+    <h2>Quản lý Ý Tưởng Website</h2>
+    <form id="ideaForm">
+      <input type="hidden" id="editIndex" value="-1">
+      <input type="text" id="title" placeholder="Tên ý tưởng" required>
+      <input type="file" id="image" accept="image/*" multiple required>
+      <textarea id="description" placeholder="Mô tả tổng quan" required></textarea>
+      <button type="submit">Thêm ý tưởng</button>
+    </form>
+    <div id="ideasList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
