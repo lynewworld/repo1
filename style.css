@@ -7,17 +7,19 @@ body {
   padding: 0;
 }
 
+/* ================== Menu ================== */
 .menu {
+  position: relative;
   display: flex;
+  justify-content: center; /* căn giữa toàn bộ menu */
   align-items: center;
-  justify-content: center;
+  gap: 30px;                /* khoảng cách đều giữa các link */
   background-color: #87CEEB;
   padding: 15px 0;
 }
 
 .menu a {
   color: #fff;
-  margin: 0 20px;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -150,22 +152,6 @@ hr {
 .topic ul li a {
   color: #005F8A;
 }
-.menu {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #87CEEB;
-  padding: 15px 30px;
-}
-
-.menu-links a {
-  color: #fff;
-  margin-right: 20px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-}
 
 /* Cố định dropdown ngôn ngữ ở cuối page, góc phải */
 #google_translate_element {
@@ -173,7 +159,6 @@ hr {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  /* Tông trắng & viền nhẹ cho dropdown */
 }
 
 #google_translate_element .goog-te-combo {
@@ -185,4 +170,3 @@ hr {
   font-size: 14px !important;
   appearance: none !important;
 }
-
