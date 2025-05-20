@@ -150,3 +150,23 @@ hr {
 .topic ul li a {
   color: #005F8A;
 }
+/* Style cho Google Translate dropdown cho hợp tông website */
+#google_translate_element .goog-te-combo {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #B3E0FF;    /* viền xanh nhạt */
+  background-color: #F0FBFF;     /* nền trắng pha xanh nhạt */
+  color: #005F8A;                /* chữ xanh đậm */
+  font-size: 14px;
+  font-weight: 500;
+  appearance: none;              /* ẩn mũi tên mặc định */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='5'><path fill='%23005F8A' d='M0,0 L5,5 L10,0'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 5px;
+}
+
+/* Tạo khoảng cách giữa dropdown và biên menu */
+.menu #google_translate_element {
+  margin-left: 20px;
+}
