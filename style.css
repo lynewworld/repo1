@@ -150,28 +150,34 @@ hr {
 .topic ul li a {
   color: #005F8A;
 }
-/* ===== Dropdown ngôn ngữ ở góc phải trên menu ===== */
 .menu {
-  position: relative; /* cho phép dropdown vị trí absolute bên trong */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #87CEEB;
+  padding: 15px 30px;
 }
 
+.menu-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Dropdown Google */
 #google_translate_element {
-  position: absolute;
-  top: 8px;    /* đẩy xuống 8px so với đỉnh menu */
-  right: 30px; /* cách mép phải menu 30px */
+  position: static; /* nằm cùng hàng */
 }
 
 #google_translate_element .goog-te-combo {
-  background-color: #ffffff !important; /* nền trắng sáng */
-  color: #333 !important;               /* chữ tối */
-  border: 1px solid #ccc !important;    /* viền nhẹ */
-  padding: 6px 12px !important;
-  border-radius: 4px !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  appearance: none !important;          
-  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='5'><path fill='%23333' d='M0,0 L5,5 L10,0'/></svg>") !important;
-  background-repeat: no-repeat !important;
-  background-position: right 10px center !important;
-  background-size: 10px 5px !important;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  appearance: none;
 }
