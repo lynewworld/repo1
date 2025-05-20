@@ -1,44 +1,167 @@
-/* style.css */
+Dưới đây là **toàn bộ file `style.css`** đã cập nhật với tông màu chủ đạo **xanh da trời** và **trắng**. Bạn chỉ cần ghi đè lên file cũ:
 
-/* … các phần CSS trước đó giữ nguyên … */
-
-/* ======= Topics Container ======= */
-.topics-container {
-  margin-top: 40px;
-  text-align: left;
-}
-.topics-container h2 {
-  margin-bottom: 15px;
-  color: #444;
-}
-.topic {
-  margin-bottom: 25px;
-}
-.topic h3 {
-  margin-bottom: 8px;
+```css
+/* style.css - Sky blue & white theme */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E6F7FF;  /* rất nhạt của xanh da trời */
   color: #333;
+  margin: 0;
+  padding: 0;
 }
-.topic ul {
-  list-style: disc inside;
-  padding-left: 0;
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #87CEEB;  /* xanh da trời */
+  padding: 15px 0;
 }
-.topic ul li {
-  margin-bottom: 6px;
+
+.menu .logo {
+  height: 40px;
+  margin-right: 20px;
 }
-.topic ul li a {
-  color: #555;
+
+.menu a {
+  color: #fff;                /* chữ trắng trên nền xanh */
+  margin: 0 20px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
 }
-.topic ul li a:hover {
+
+.menu a:hover {
   text-decoration: underline;
 }
 
-/* Đảm bảo container không quá chật */
+.breadcrumb {
+  margin: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
 .container {
   max-width: 800px;
   margin: 20px auto;
-  background: #fff;
+  background: #fff;            /* nền trắng */
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+h1, h2, h3 {
+  color: #005F8A;              /* xanh đậm hơn cho tiêu đề */
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: 1px solid #B3E0FF;   /* viền nhạt xanh */
+  border-radius: 4px;
+  background: #F0FBFF;         /* nền rất nhạt */
+}
+
+button {
+  background-color: #00AEEF;   /* xanh da trời tươi */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #008CAB;   /* xanh đậm khi hover */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #B3E0FF;
+  margin: 0 0 20px;
+}
+
+/* Idea items */
+.idea-item {
+  background: #FFFFFF;
+  border: 1px solid #B3E0FF;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.idea-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.idea-images img {
+  max-width: 100px;
+  border: 1px solid #B3E0FF;
+  border-radius: 4px;
+}
+
+.idea-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.idea-actions button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.idea-actions .edit {
+  background-color: #FFD966;   /* màu vàng nhẹ cho nút Sửa */
+  color: #333;
+}
+
+.idea-actions .delete {
+  background-color: #FF6B6B;   /* đỏ tươi cho nút Xóa */
+  color: #fff;
+}
+
+.idea-actions button:hover {
+  opacity: 0.8;
+}
+
+/* Search & Topics */
+.search-container, .topics-container {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.search-container input {
+  border: 1px solid #B3E0FF;
+}
+
+#searchResults li {
+  border-bottom: 1px solid #B3E0FF;
+}
+
+.topics-container h2 {
+  margin-bottom: 15px;
+  color: #005F8A;
+}
+
+.topic h3 {
+  color: #005F8A;
+}
+
+.topic ul li a {
+  color: #005F8A;
+}
+```
